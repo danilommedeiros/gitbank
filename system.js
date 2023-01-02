@@ -28,7 +28,7 @@ if (objetivo === "transferencia") {
       console.log("Tente novamente com um valor válido.");
     }, 4000);
   } else {
-    let saldoPosTransferencia = saldo - valorDeTransferencia;
+    let saldoPosTransferencia = parseInt(saldo) - parseInt(valorDeTransferencia);
     console.log("Aguarde, estamos transferindo...");
     setTimeout(() => {
       console.log("Tudo certo! Obrigado(a) por aguardar...");
